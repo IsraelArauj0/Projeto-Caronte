@@ -6,3 +6,11 @@
     --color4:#fafcd3;
     --color5:#efeba9;
 }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
