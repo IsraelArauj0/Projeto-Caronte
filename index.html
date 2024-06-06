@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
 </head>
 <body>
     <header>
+        <!--MENU NAV-->
         <nav>
             <a href="" class="logo"><img src="./src/assets/icone_caronte.webp" width="150px"></a>
             <ul>
@@ -22,11 +23,19 @@
             </ul>
         </nav>
     </header>
+    <!--ALERTA-->
+    <button id="alertButton">Clique Aqui</button>
     <main>
+        <!--Seções de conteudo-->
         <section class="problem">
             <div class="sea">
                 <h4>O Desafio dos Oceanos</h4>
-                <img src="./src/assets/banners/poluicao1.jpg" alt="poluição oceanica">
+                <div class="carrossel" id="carrossel1">
+                    <div class="slide active"><img src="./src/assets/banners/poluicao1.jpg" alt="poluicao 1"></div>
+                    <div class="slide"><img src="./src/assets/banners/poluicao2.jpg" alt="poluicao 2"></div>
+                    <div class="slide"><img src="./src/assets/banners/poluicao3.jpg" alt="poluicao 3"></div>
+                    <div class="slide"><img src="./src/assets/banners/poluicao4.jpg" alt="poluicao 4"></div>
+                </div>
                 <br>
                 <span>Os oceanos estão enfrentando problemas críticos, como a poluição plástica, a destruição de habitats marinhos, as mudanças climáticas e a pesca insustentável. Esses problemas não apenas afetam a vida marinha, mas também impactam a saúde humana, a economia e a biodiversidade global. É essencial agir agora para proteger nossos oceanos e garantir um futuro sustentável para as próximas gerações.</span>
             </div>
@@ -34,7 +43,11 @@
         <section>
             <div class="tech">
                 <h4>Tecnologia Inovadora para Salvar os Oceanos</h4>
-                <img src="./src/assets/banners/boia1.jfif" alt="Caronte e seus drones">
+                <div class="carrossel" id="carrossel2">
+                    <div class="slide active"><img src="./src/assets/banners/boia 2.jfif" alt="Tech 1"></div>
+                    <div class="slide"><img src="./src/assets/banners/boia1.jfif" alt="Tech 2"></div>
+                    <div class="slide"><img src="./src/assets/banners/drone1.jfif" alt="Tech 3"></div>
+                </div>
                 <br>
                 <p>Nossa solução CARONTE combina várias tecnologias avançadas para monitorar e proteger os oceanos:<br>Boias CARONTE: Equipadas com sensores que monitoram em tempo real parâmetros como temperatura da água, níveis de pH, concentração de plásticos e produtos químicos, e biodiversidade.<br>Drones Marítimos: Autossustentáveis e equipados com painéis solares, responsáveis pela coleta de dados e limpeza dos oceanos.<br>Satélites: Complementam o monitoramento, fornecendo dados abrangentes sobre grandes áreas oceânicas.<br>Inteligência Artificial: Processa os dados coletados e gera insights essenciais para a formulação de políticas e práticas sustentáveis.</p>
             </div>
@@ -53,7 +66,10 @@
         <section>
             <div class="impact">
                 <h4>Impacto em Diversos Públicos</h4>
-                <img src="./src/assets/banners/montagem1.jfif" alt="impacto na sociedade">
+                <div class="carrossel" id="carrossel3">
+                    <div class="slide active"><img src="./src/assets/banners/grafico.jfif" alt="grafico 1"></div>
+                    <div class="slide"><img src="./src/assets/banners/grafico1.jfif" alt="grafico 2"></div>
+                </div>
                 <p>Nossa solução beneficiará uma ampla gama de públicos:</p>
                 <p>Cientistas e Pesquisadores: Proporcionando dados valiosos para estudos e monitoramento ambiental.<br>Comunidades Costeiras: Protegendo suas fontes de subsistência e promovendo práticas sustentáveis.<br>Formuladores de Políticas: Oferecendo insights baseados em dados para a criação de políticas ambientais eficazes.<br>Sociedade em Geral: Aumentando a conscientização e promovendo a educação ambiental para todos.</p>
             </div>
@@ -61,7 +77,11 @@
         <section>
             <div class="solucao">
                 <h4>Benefícios da Solução CARONTE</h4>
-                <img src="./src/assets/banners/oceano.jpg" alt="Oceanos limpos" width="700px">
+                <div class="carrossel" id="carrossel4">
+                    <div class="slide active"><img src="./src/assets/banners/oceano.jpg" alt="oceano 1"></div>
+                    <div class="slide"><img src="./src/assets/banners/oceano1.jpg" alt="oceano 2"></div>
+                    <div class="slide"><img src="./src/assets/banners/oceano2.png" alt="oceano 3"></div>
+                </div>
                 <p>Melhoria da Saúde dos Oceanos: Redução da poluição e restauração de habitats marinhos.<br>Dados Precisos: Monitoramento em tempo real para decisões mais informadas.<br>Economia Sustentável: Apoio a práticas econômicas que respeitam o meio ambiente.<br>Engajamento Público: Maior conscientização e participação da sociedade civil na conservação dos oceanos.<br>Inovações Tecnológicas: Utilização de tecnologias avançadas para resolver problemas ambientais complexos.</p>
             </div>
         </section>
@@ -72,6 +92,17 @@
             </div>
         </section>
     </main>
+    
+
+    <!--Login-->
+    <form id="loginForm">
+        <h2>Login</h2>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Entrar</button>
+    </form>
 
     <footer>
         <section>
