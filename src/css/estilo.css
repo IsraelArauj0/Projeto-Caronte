@@ -86,7 +86,7 @@ section div img {
 }
 
 #alertButton {
-    padding: 10px 20px;
+    padding: 15px 25px;
     margin-top: 20px;
     margin-left:1rem ;
     cursor: pointer;
@@ -99,7 +99,7 @@ section div img {
 }
 #alertButton:hover{
     background-color: var(--color2);
-    filter:brightness(70%) ;
+    filter:brightness(70%);
 }
 
 /*Formulário de login */
