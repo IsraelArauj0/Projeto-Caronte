@@ -1,6 +1,6 @@
 :root{
     --font:"lato", sans-serif;
-    --color1:#010300;
+    --color1:#1A1A1A;
     --color2:#314c53;
     --color3:#5a7f78;
     --color4:#bbdec6;
@@ -15,13 +15,13 @@
 }
 
 header {
-    background-color:var(--color1);
+    background-color:var(--color2);
     padding: 20px;
     color: white;
 }
 
 body{
-    background:var(--color3) ;
+    background:var(--color1) ;
 }
 
 nav {
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--color2);
+    color: var(--color1);
 }
 
 
@@ -66,25 +66,30 @@ main {
 section {
     padding: 2%;
     margin-bottom: 60px;
-    background: var(--color2);
     color: var(--color5);
+    filter: drop-shadow(0px 0px 20px #000);
 }
 
 h4 {
     margin-bottom: 10px;
     font-size: 2rem;
-    color: var(--color1);
+    color: var(--color5);
 }
 
-p{
-    font-size: 1.2rem;
-}
 section div img {
+    position: relative;
     width: 100%;
     height: 70vh;
     margin-bottom: 10px;
 }
 
+p{
+    font-size: 1.2rem;
+    color: white;
+    background: var(--color2);
+    padding: 1rem;
+    border-radius: 20px;
+}
 #alertButton {
     padding: 15px 25px;
     margin-top: 20px;
@@ -94,28 +99,29 @@ section div img {
     align-items: center;
     border-radius: 30%;
     border: none;
-    background-color: var(--color1);
+    background-color: var(--color2);
     color: white;
 }
 #alertButton:hover{
-    background-color: var(--color2);
+    background-color: var(--color5);
     filter:brightness(70%);
+    color: #1A1A1A;
 }
 
 /*Formulário de login */
 #loginForm {
     display: flex;
     flex-direction: column;
+    background: var(--color2);
+    padding: 1rem;
+    border-radius: 10px;
     width: 200px;
     margin: 20px auto;
+    filter: drop-shadow(0px 0px 10px #000);
 }
 
 #loginForm h2 {
     margin-bottom: 10px;
-}
-
-#loginForm label {
-    margin-bottom: 5px;
 }
 
 #loginForm input {
@@ -124,16 +130,22 @@ section div img {
     background: var(--color4);
     border: var(--color1);
     border-radius: 10px;
+    margin-top: 5px;
+}
+
+#loginForm input:hover {
+    filter: drop-shadow(0px 0px 5px #000);
 }
 
 #loginForm button {
     padding: 10px;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 5%;
     border: none;
 }
 #loginForm button:hover{
-    filter: brightness(70%);
+    filter: drop-shadow(0px 0px 10px #000);
 }
 
 /* Estilo do carrossel */
@@ -144,13 +156,13 @@ section div img {
 }
 .carrossel:hover{
     filter: brightness(70%);
-
 }
 
 .carrossel .slide {
     display: none;
     width: 100%;
     transition: opacity 1s;
+    
 }
 
 .carrossel .slide.active {
@@ -158,7 +170,7 @@ section div img {
 }
 
 footer {
-    background-color: var(--color1);
+    background-color: var(--color2);
     padding: 20px;
     color: white;
     text-align: center;
